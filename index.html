@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Who Is Your NBA Goat?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1 id="title">Who's The Greatest NBA Player?</h1>
+    <p id="description">Who Do You Think Is The Greatest Of All Time?</p>
+    <section class="forms">
+      <form id="survey-form" method="POST" action="https://formspree.io/f/mqazzpep"> 
+        <fieldset>
+          <label id="name-label" for="name">Name: <input class="info" type="text" id="name" name="Name" required placeholder="Enter Your Name"></label>
+          <label id="email-label" for="email">Email: <input class="info" type="email" id="email" name="Email" required placeholder="Enter Your Email"></label>
+          <label id="number-label" for="number">Age: <input class="info" type="number" id="number" name="Age" min="10" max="120" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+          <legend>What Is Most The Important?</legend>
+          <label for="dropdown">
+            <select id="dropdown" name="Most Important Factor">
+              <option value="">(Select One)</option>
+              <option value="1">Rings</option>
+              <option value="2">Dominance</option>
+              <option value="3">Stats & Records</option>
+              <option value="4">Longevity</option>
+              <option value="5">Peak</option>
+              <option value="6">Other (Explain Below)</option>
+            </select>
+          </label>
+        </fieldset>  
+        <fieldset name="G.O.A.T">
+          <legend>Who Is Your G.O.A.T.</legend>
+          <label for="lebron"><input class="inline" type="radio" name="goat" id="lebron" checked value="lebron"> Lebron</label>
+          <label for="jordan"><input class="inline" type="radio" name="goat" id="jordan" value="jordan"> Jordan</label>
+          <label for="kareem"><input class="inline" type="radio" name="goat" id="kareem" value="kareem"> Kareem</label>
+          <label for="bill-russell"><input class="inline" type="radio" name="goat" id="bill-russell" value="billrussell"> Bill Russell</label>
+          <label for="wilt"><input class="inline" type="radio" name="goat" id="wilt" value="wilt"> Wilt</label>
+          <label for="kobe"><input class="inline" type="radio" name="goat" id="kobe" value="kobe"> Kobe</label>
+          <label for="other"><input class="inline" type="radio" name="goat" id="other" value="other"> Other (Name and Explain Below)</label>
+        </fieldset>
+        <fieldset name="Decades Watched">
+          <legend>Select Decades Of Basketball Watched</legend>
+          <label for="pre1960s"><input type="checkbox" id="pre1960s" value="50s"> Pre-1960s </label>
+          <label for="1960s"><input class="inline" type="checkbox" id="1960s" value="60s"> 1960s</label>
+          <label for="1970s"><input class="inline" type="checkbox" id="1970s" value="70s"> 1970s</label>
+          <label for="1980s"><input class="inline" type="checkbox" id="1980s" value="80s"> 1980s</label>
+          <label for="1990s"><input class="inline" type="checkbox" id="1990s" value="90s"> 1990s</label>
+          <label for="2000s"><input class="inline" type="checkbox" id="2000s" value="00s"> 2000s</label>
+          <label for="2010s"><input class="inline" type="checkbox" id="2010s" value="10s"> 2010s</label>
+          <label for="2020s"><input class="inline" type="checkbox" id="2020s" value="20s"> 2020s</label>
+        </fieldset>
+        <fieldset>
+          <legend>Extra Comments</legend>
+          <label for="comments"><textarea name="Comments" rows="5" cols="30" id="comments" placeholder="Explain Who Your G.O.A.T. Is & Why..."></textarea></label>
+        </fieldset>
+        <fieldset>
+          <input id="submit" class="submit" type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+  </body>  
+</html>
